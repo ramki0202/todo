@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>title</title>
+    <title>Todo List</title>
 </head>
 
 <link rel="stylesheet" href="style.css">
@@ -12,8 +12,19 @@
 <script src="https://cdn.tailwindcss.com"></script>
 
 <body>
-    <h1>My First Heading</h1>
-    <p class="text-[24px]">My first paragraph.</p>
+    <div class="max-w-md mx-auto mt-10 p-6 bg-white shadow-md rounded-lg">
+        <h1 class="mb-4 text-2xl font-bold text-center">MeePixel</h1>
+        <input type="text" placeholder="Add a new task" class="border p-2 mb-4 w-full">
+        <submit>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded">Add Task</button>
+        </submit>
+        <div class="mt-4 task">
+            <ul></ul>
+        </div>
+        <div>
+            <button class="bg-red-500 text-white px-4 py-2 rounded mt-4 w-full">Clear Completed</button>
+        </div>
+    </div>
 
 
     <script src="script.js"></script>
