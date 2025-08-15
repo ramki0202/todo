@@ -11,19 +11,28 @@
 <!-- Tailwind CSS CDN -->
 <script src="https://cdn.tailwindcss.com"></script>
 
-<body>
+<body class="bg-white text-black dark:bg-gray-900 dark:text-white">
     <div class="max-w-md mx-auto mt-10 p-6 bg-white shadow-md rounded-lg">
         <h1 class="mb-4 text-2xl font-bold text-center">MeePixel</h1>
         <input type="text" placeholder="Add a new task" class="border p-2 mb-4 w-full">
         <submit>
             <button class="bg-blue-500 text-white px-4 py-2 rounded">Add Task</button>
         </submit>
+        <div class="flex gap-2 mt-4">
+            <button id="filter-all" class="filter-btn px-4 py-2 bg-gray-200 rounded">All</button>
+            <button id="filter-active" class="filter-btn px-4 py-2 bg-gray-200 rounded">Active</button>
+            <button id="filter-completed" class="filter-btn px-4 py-2 bg-gray-200 rounded">Completed</button>
+            <button id="clear-completed" class="px-4 py-2 bg-red-500 text-white rounded">Clear Completed</button>
+        </div>
         <div class="mt-4 task">
-            <ul></ul>
+            <ul class="bg-gray-100 dark:bg-gray-800 dark:text-white ..."></ul>
         </div>
-        <div>
-            <button class="bg-red-500 text-white px-4 py-2 rounded mt-4 w-full">Clear Completed</button>
-        </div>
+    </div>
+    <div class="max-w-md mx-auto mt-10 p-6 bg-white shadow-md rounded-lg">
+
+        <button id="dark-mode-toggle" class="px-4 py-2 bg-gray-800 text-white rounded">
+            🌙 Dark Mode
+        </button>
     </div>
 
 
