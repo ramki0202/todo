@@ -133,24 +133,3 @@ function setActiveButton(filter) {
 
 loadTasks(); // Get tasks from storage
 renderTasks(); // Show them on the page
-
-const darkModeToggle = document.getElementById("dark-mode-toggle");
-
-darkModeToggle.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-
-  // Save preference
-  if (document.body.classList.contains("dark")) {
-    localStorage.setItem("theme", "dark");
-    darkModeToggle.textContent = "☀ Light Mode";
-  } else {
-    localStorage.setItem("theme", "light");
-    darkModeToggle.textContent = "🌙 Dark Mode";
-  }
-});
-
-// Load saved theme
-if (localStorage.getItem("theme") === "dark") {
-  document.body.classList.add("dark");
-  darkModeToggle.textContent = "☀ Light Mode";
-}
